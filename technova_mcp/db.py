@@ -46,7 +46,8 @@ CREATE TABLE IF NOT EXISTS returns (
     reason TEXT NOT NULL,
     status TEXT NOT NULL DEFAULT 'pending',
     created_by TEXT NOT NULL,
-    created_on TEXT NOT NULL
+    created_on TEXT NOT NULL,
+    idempotency_key TEXT UNIQUE
 );
 CREATE TABLE IF NOT EXISTS tool_calls (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
