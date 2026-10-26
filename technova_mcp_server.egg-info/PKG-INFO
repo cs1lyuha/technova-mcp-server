@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: technova-mcp-server
+Version: 0.1.0
+Summary: Server MCP pentru TechNova: produse, comenzi, retururi, politici — cu roluri, validare, rate limiting și audit
+Requires-Python: >=3.11
+Requires-Dist: mcp<3,>=2.3
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

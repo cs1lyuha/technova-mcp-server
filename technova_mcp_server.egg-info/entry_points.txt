@@ -1,0 +1,2 @@
+[console_scripts]
+technova-mcp = technova_mcp.__main__:main
